@@ -72,7 +72,7 @@ jobs:
           path: ${{ env.APK }}
   upload:
     name: Upload release
-    if: github.event.inputs.upload != 'y'
+    if: false
     # The channel-publish action runs a Bot API server built on this system.
     runs-on: ubuntu-24.04
     needs:
